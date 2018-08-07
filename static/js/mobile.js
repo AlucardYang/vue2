@@ -1,5 +1,3 @@
-// fundebug.apikey = "5db572979c062e7df1aaf1977526a03d81276c2ce75d8431816724e789e35b8f";
-
 window.remCount = 0;
 var setRem = function () {
     var size = document.documentElement.clientWidth / 375 * 100;
