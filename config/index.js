@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api': {
+        target: 'https://static.iberhk.com',
+        changeOrigin: true,
+        pathRewrite: {
+        '^/api': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'peterdev.app.goodiber.com', // can be overwritten by process.env.HOST
