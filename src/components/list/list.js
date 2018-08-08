@@ -1,7 +1,5 @@
 const options = {};
 
-document.title = '生日賀卡列表';
-
 export default {
     name: 'List',
     data() {
@@ -33,6 +31,6 @@ export default {
         }
     },
     mounted: function () {
-    
+        document.title = '生日賀卡列表';
     }
 }

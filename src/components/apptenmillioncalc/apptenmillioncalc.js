@@ -2,8 +2,6 @@ import videojs from '../../../static/js/ion.rangeSlider.min.js';
 
 const options = {};
 
-document.title = '成為千萬富翁';
-
 Number.prototype.formatMoney = function (places, symbol, thousand, decimal) {
     places = !isNaN(places = Math.abs(places)) ? places : 2;
     symbol = symbol !== undefined ? symbol : "$";
@@ -76,6 +74,7 @@ export default {
     },
     methods: {
         init: function (type) {
+            document.title = '成為千萬富翁';
             let calculator = this;
             setTimeout(function () {
                 $("#" + type + "Slider").ionRangeSlider({

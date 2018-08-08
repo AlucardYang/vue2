@@ -1,10 +1,8 @@
-import '../../../static/js/common.js';
 import enableInlineVideo from 'iphone-inline-video';
 import videojs from 'video.js';
 
 const options = {};
 
-document.title = options['share'] && options['share']['title'] && !options['in_app'] ? options['share']['title'] : '生日賀卡';
 options['share'] = options['share'] ? options['share'] : {
     title: 1
 };
@@ -37,6 +35,7 @@ export default {
     },
     methods: {
         initCard: function () {
+            document.title = '生日賀卡';
             let cardCompnent = this;
             setTimeout(function () {
                 cardCompnent.showHappy = true;

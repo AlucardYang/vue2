@@ -2,8 +2,6 @@ import videojs from '../../../static/js/ion.rangeSlider.min.js';
 
 const options = {};
 
-document.title = '未來值計算器';
-
 Number.prototype.formatMoney = function (places, symbol, thousand, decimal) {
     places = !isNaN(places = Math.abs(places)) ? places : 2;
     symbol = symbol !== undefined ? symbol : "$";
@@ -89,6 +87,7 @@ export default {
             calculator.updateAgeSlider('year');
         },
         init: function (type) {
+            document.title = '複利計算';
             let calculator = this;
             setTimeout(function () {
                 $("#" + type + "Slider").ionRangeSlider({
