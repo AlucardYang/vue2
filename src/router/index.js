@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import List from '@/components/list/list.vue'
 import TextBirthdayCard1 from '@/components/textbirthdaycard1/textbirthdaycard1.vue'
 import TextBirthdayCard2 from '@/components/textbirthdaycard2/textbirthdaycard2.vue'
+import VideoBirthdayCard1 from '@/components/videobirthdaycard1/videobirthdaycard1.vue'
+import VideoBirthdayCard2 from '@/components/videobirthdaycard2/videobirthdaycard2.vue'
 
 Vue.use(Router)
 
@@ -23,6 +25,14 @@ export default new Router({
       path: '/textbirthdaycard2',
       name: 'textbirthdaycard2',
       component: TextBirthdayCard2
+    },{
+      path: '/videobirthdaycard1',
+      name: 'videobirthdaycard1',
+      component: VideoBirthdayCard1
+    },{
+      path: '/videobirthdaycard2',
+      name: 'videobirthdaycard2',
+      component: VideoBirthdayCard2
     }
   ]
 })

@@ -10,8 +10,13 @@ export default {
   name: 'App'
 }
 </script>
+<!-- 手机端模式 -->
+<script src="../static/js/mobile.js"></script>
 
 <style>
+@import '../static/css/common.css';
+@import '../static/css/style.css';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

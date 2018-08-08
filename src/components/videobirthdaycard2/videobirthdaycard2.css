@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-size: .18rem;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clearfix:after {
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+em, i {
+    font-style: normal;
+}
+
+img {
+    border: 0 none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.full-content {
+    width: 100%;
+}
+
+.video-image {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.card-template-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-image: url("/static/images/card/birthday/birdthdaybg.png");*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-template {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-main-content {
+    width: 100%;
+    height: 70%;
+    min-height: 4.65rem;
+    position: absolute;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*-webkit-transform: translateY(-50%);*/
+    text-align: center;
+    bottom: 11%;
+
+}
+
+.head-image-box {
+    position: relative;
+    width: 100%;
+    height: 13%;
+    text-align: center;
+    min-height: 0.5rem;
+}
+
+.head-image {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - .25rem);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid rgb(222, 223, 224);
+}
+
+.from-wish {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: .14rem;
+    line-height: .14rem;
+    color: rgb(151, 151, 151);
+}
+
+.from-wish span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #151515;
+}
+
+.from-user-name {
+    font-size: .14rem;
+    line-height: .14rem;
+    color: #000;
+    font-weight: bold;
+    max-width: 1.2rem;
+    margin: 0 .04rem;
+}
+
+.video-content {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 12.5%;
+}
+
+.video-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.paly-button, .pause-button {
+    position: absolute;
+    width: .48rem;
+    height: .48rem;
+    background-color: rgba(0, 0, 0, .5);
+    left: calc(50% - .24rem);
+    bottom: 2.56rem;
+    border-radius: .24rem;
+    z-index: 7;
+}
+
+.paly-button:before {
+    content: '';
+    position: absolute;
+    border: .12rem solid transparent;
+    border-left: .18rem solid #fff;
+    border-right: 0;
+    left: .18rem;
+    top: .12rem;
+}
+
+.pause-button:before, .pause-button:after {
+    content: '';
+    position: absolute;
+    width: .05rem;
+    background-color: #fff;
+    height: .2rem;
+    border-radius: .025rem;
+    left: .18rem;
+    top: .14rem;
+}
+
+.pause-button:after {
+    left: .27rem;
+}
+
+.video-tip {
+    position: absolute;
+    width: .6rem;
+    height: .32rem;
+    line-height: .16rem;
+    text-align: center;
+    color: #fff;
+    font-size: .16rem;
+    border: .02rem solid #FFFFFF;
+    border-radius: .04rem;
+    top: calc(50% - .16rem);
+    left: calc(50% - .3rem);
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: .07rem 0;
+    bottom: 2.1rem;
+    z-index: 2;
+}
+
+.video-max-time {
+    position: absolute;
+    display: block;
+    font-size: .12rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    right: 3%;
+    bottom: 1%;
+    z-index: 2;
+}
+
+.thank-reply-button {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: .29rem;
+    width: 1.8rem;
+    height: 0.36rem;
+    color: rgb(223, 61, 110);
+    border: .01rem solid rgb(225, 87, 132);
+    font-size: 0.16rem;
+    line-height: 0.36rem;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 4% 0 0;
+    animation: toLarge 3s infinite;
+    -webkit-animation: toLarge 3s infinite;
+    -moz-animation: toLarge 3s infinite;
+    -ms-animation: toLarge 3s infinite;
+    -o-animation: toLarge 3s infinite;
+}
+
+@keyframes toLarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes toLarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes toLarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-ms-keyframes toLarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes toLarge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-text-div {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    /*animation: typing 1.5s steps(40);*/
+}
+
+.card-template .fade-in-enter-active {
+    transition: all 2s ease;
+}
+
+.card-template .fade-in-enter, .fade-in-leave-to {
+    opacity: 0;
+}
+
+.card-left-flower {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 27%;*/
+    height: 19%;
+}
+
+.card-right-flower {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*width: 27%;*/
+    height: 19%;
+}
+
+.video2-happy-box {
+    position: relative;
+    width: 100%;
+    /*height: calc(7% + .76rem);*/
+    height: 23%;
+    min-height: .76rem;
+}
+
+.video2-happy {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 1.2rem);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.4rem;
+}
+
+.card-leaf {
+    position: absolute;
+    bottom: .1rem;
+    left: calc(50% - 1.3rem);
+    width: 2.6rem;
+}
+
+.video-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.video-mask-light {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.go-back {
+    position: absolute;
+    left: .15rem;
+    top: .15rem;
+    z-index: 10000000;
+}

@@ -1,5 +1,7 @@
 const options = {};
 
+document.title = '生日賀卡列表';
+
 export default {
     name: 'List',
     data() {
@@ -11,6 +13,12 @@ export default {
                 }, {
                     name: 'text-birthday-card2',
                     link: '/textbirthdaycard2'
+                }, {
+                    name: 'video-birthday-card1',
+                    link: '/videobirthdaycard1'
+                }, {
+                    name: 'video-birthday-card2',
+                    link: '/videobirthdaycard2'
                 }
             ]
         }

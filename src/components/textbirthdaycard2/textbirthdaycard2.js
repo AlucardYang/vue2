@@ -1,3 +1,5 @@
+import '../../../static/js/common.js';
+
 const options = {};
 
 document.title = options['share'] && options['share']['title'] && !options['in_app'] ? options['share']['title'] : '生日賀卡';

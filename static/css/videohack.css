@@ -1,0 +1,63 @@
+/*隐藏其他播放按钮*/
+video::-webkit-media-controls-overlay-play-button {
+    display: none;
+}
+
+/*隐藏IOS10播放按钮*/
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+
+.video-js .vjs-big-play-button{
+    font-size: .24rem;
+    line-height: .48rem;
+    -webkit-border-radius: .24rem;
+    -moz-border-radius: .24rem;
+    border-radius: .24rem;
+    width: .48rem;
+    height: .48rem;
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    margin-top: -.24rem;
+    margin-left: -.24rem;
+}
+/* 中间的播放箭头 */
+.vjs-big-play-button .vjs-icon-placeholder {
+    font-size: 1.63em;
+}
+/* 加载圆圈 */
+.vjs-loading-spinner {
+    font-size: 2.5em;
+    width: .48rem;
+    height: .48rem;
+    border-radius: .24rem;
+    margin-top: -.24rem;
+    margin-left: -.24rem;
+}
+
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+
+.video-js .vjs-time-control {
+    display:block;
+}
+
+.video-js .vjs-remaining-time {
+    display: none;
+}
+
+.vjs-poster {
+    background-color: transparent;
+    /*background-size: 100% 100%;*/
+}
+
+.video-js, .vjs-no-js {
+    background-color: transparent;
+    z-index: 5;
+}
