@@ -5,6 +5,9 @@ import TextBirthdayCard1 from '@/components/textbirthdaycard1/textbirthdaycard1.
 import TextBirthdayCard2 from '@/components/textbirthdaycard2/textbirthdaycard2.vue'
 import VideoBirthdayCard1 from '@/components/videobirthdaycard1/videobirthdaycard1.vue'
 import VideoBirthdayCard2 from '@/components/videobirthdaycard2/videobirthdaycard2.vue'
+import AppTenMillionCalc from '@/components/apptenmillioncalc/apptenmillioncalc.vue'
+import AppFutureCalc from '@/components/appfuturecalc/appfuturecalc.vue'
+import AppCompoundInterestCalc from '@/components/appcompoundinterestcalc/appcompoundinterestcalc.vue'
 
 Vue.use(Router)
 
@@ -33,6 +36,18 @@ export default new Router({
       path: '/videobirthdaycard2',
       name: 'videobirthdaycard2',
       component: VideoBirthdayCard2
+    },{
+      path: '/apptenmillioncalc',
+      name: 'apptenmillioncalc',
+      component: AppTenMillionCalc
+    },{
+      path: '/appfuturecalc',
+      name: 'appfuturecalc',
+      component: AppFutureCalc
+    },{
+      path: '/appcompoundinterestcalc',
+      name: 'appcompoundinterestcalc',
+      component: AppCompoundInterestCalc
     }
   ]
 })

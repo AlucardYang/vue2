@@ -1,0 +1,94 @@
+/*重置IonRangeSlider样式*/
+.irs {
+    height: .4rem;
+}
+
+.irs-single {
+    display: none;
+}
+
+.irs-slider {
+    width: .02rem;
+    height: .02rem;
+    top: .18rem;
+    left: -.08rem;
+    background: none;
+}
+
+.irs-slider.single:before {
+    position: absolute;
+    content: '';
+    width: .4rem;
+    height: .4rem;
+    top: -.2rem;
+    left: -.19rem;
+    background-image: url("/static/images/calculator/sliderbutton.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.irs-bar {
+    display: none;
+}
+
+.irs-bar-edge {
+    display: none;
+}
+
+.irs-line {
+    box-sizing: border-box;
+    height: .01rem;
+    width: 100%;
+    top: .18rem;
+}
+
+.irs-line:focus {
+    outline: none;
+}
+
+.irs-line-left, .irs-line-right {
+    display: none;
+}
+
+.irs-line-mid {
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background-image: none;
+    background-color: #eee;
+}
+
+.irs-grid {
+    top: .185rem;
+}
+
+.irs-grid-text {
+    display: none;
+    font-size: .1rem;
+    color: rgba(42, 42, 42, .3);
+    top: .12rem;
+}
+
+.irs-grid-pol {
+    top: .18rem;
+    background: #eee;
+    width: .01rem;
+    height: .05rem;
+}
+
+.irs-grid-pol.small {
+    height: .04rem;
+}
+
+.owner-grid-text {
+    display: inline-block;
+    min-width: .42rem;
+    text-align: center;
+    position: absolute;
+    font-size: .1rem;
+    color: rgba(42, 42, 42, .3);
+    top: .22rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}

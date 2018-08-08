@@ -19,6 +19,15 @@ export default {
                 }, {
                     name: 'video-birthday-card2',
                     link: '/videobirthdaycard2'
+                }, {
+                    name: 'app-ten-million-calc',
+                    link: '/apptenmillioncalc'
+                }, {
+                    name: 'app-future-calc',
+                    link: '/appfuturecalc'
+                }, {
+                    name: 'app-compound-interest-calc',
+                    link: '/appcompoundinterestcalc'
                 }
             ]
         }

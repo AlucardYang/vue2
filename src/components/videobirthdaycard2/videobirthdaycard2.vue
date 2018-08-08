@@ -31,7 +31,7 @@
             <div class="video-content">
               <img class="full-content" :class="{'opacity-0': videoSrc}" src="/static/images/card/birthday/videodefault.png" alt="">
               <div v-show="!videoSrc && showMask" class="video-mask" :class="{'video-mask-light': videoSrc}"></div>
-              <video id="videoPlayer" v-if="videoSrc" class="video-area video-js vjs-big-play-centered" webkit-playsinline playsinline controlslist="nodownload" :poster="videoPosterUrl" @loadstart="setPoster()">
+              <video id="videoPlayer2" v-if="videoSrc" class="video-area video-js vjs-big-play-centered" webkit-playsinline playsinline controlslist="nodownload" :poster="videoPosterUrl" @loadstart="setPoster()">
                 <source :src="videoSrc" type='video/mp4'>
                 <source :src="videoWebmSrc" type="video/webm">
               </video>
@@ -51,6 +51,6 @@
 <script src="./videobirthdaycard2.js"></script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style src="video.js/dist/video-js.css"></style>
-<style src="../../../static/css/videohack.css"></style>
+<style src="../../../static/css/video-hack.css"></style>
 <style scoped src="./videobirthdaycard2.css"></style>
 

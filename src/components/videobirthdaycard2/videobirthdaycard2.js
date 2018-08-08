@@ -49,10 +49,10 @@ export default {
                 }
                 setTimeout(function () {
                     if (cardCompnent.videoSrc) {
-                        var videoObj = document.getElementById('videoPlayer');
+                        var videoObj = document.getElementById('videoPlayer2');
                         // 兼容iphone全屏问题
                         enableInlineVideo(videoObj);
-                        videojs('videoPlayer', {
+                        videojs(videoObj, {
                             controls: true,
                             autoplay: false,
                             preload: 'auto',
@@ -60,7 +60,7 @@ export default {
                             'webkit-playsinline': true
                         });
                     }
-                }, 10);
+                }, 100);
             }, 1500);
         },
         setPoster: function () {

@@ -61,3 +61,13 @@ video::-webkit-media-controls-start-playback-button {
     background-color: transparent;
     z-index: 5;
 }
+
+.video-js .vjs-control:focus {
+    border: none;
+    outline: none;
+}
+
+.vjs-button > .vjs-icon-placeholder:before {
+    font-size: 1.8em;
+    line-height: 2;
+}
