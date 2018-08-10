@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import $ from 'jquery'
+import VueResource from 'vue-resource'
 
-Vue.config.productionTip = false
+Vue.use(VueResource);
+Vue.config.productionTip = false;
 
 // 增加监控
 var fundebug = require("fundebug-javascript");
