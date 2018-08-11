@@ -67,7 +67,7 @@
     <footer v-if="!inApp" class="calc-footer">
       <div class="head-image">
         <img class="head-image-avatar" :src="avatar" alt="">
-        <img v-if="is_realname_verified" class="head-image-vip" src="/static/images/calculator/realnameauth.png">
+        <img v-if="is_realname_verified" class="head-image-vip" src="../../../static/images/calculator/realnameauth.png">
       </div>
       <div class="name-number-box overflow-ellipsis">
         <span>{{name}}</span><br>

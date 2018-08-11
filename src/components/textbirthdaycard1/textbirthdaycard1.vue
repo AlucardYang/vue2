@@ -4,8 +4,8 @@
     <div class="card-template">
       <transition name="fade-in">
         <div v-show="showHappy">
-          <img class="card-text-postcard" src="/static/images/card/birthday/text1postcard.png" alt="">
-          <img class="card-text-pig" src="/static/images/card/birthday/text1pig.png" alt="">
+          <img class="card-text-postcard" src="../../../static/images/card/birthday/text1postcard.png" alt="">
+          <img class="card-text-pig" src="../../../static/images/card/birthday/text1pig.png" alt="">
         </div>
       </transition>
       <transition name="fade-in">
@@ -22,7 +22,7 @@
               -->
             <span>的生日祝福</span>
           </span>
-          <img class="card-text-cake" src="/static/images/card/birthday/text1cake.png" alt="">
+          <img class="card-text-cake" src="../../../static/images/card/birthday/text1cake.png" alt="">
           <div v-if="type === 'text'" class="card-text">
             <div id="cardTextContent" class="card-text-content">
               <span class="card-text-span" v-text="text"></span>

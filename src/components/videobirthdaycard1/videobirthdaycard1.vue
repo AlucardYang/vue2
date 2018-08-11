@@ -4,13 +4,13 @@
     <div class="card-template">
       <transition name="fade-in">
         <div v-show="showHappy">
-          <img class="card-video-happy-bg" src="/static/images/card/birthday/video1happybg.png" alt="">
-          <img class="card-video-happy" src="/static/images/card/birthday/video1happy.png" alt="">
+          <img class="card-video-happy-bg" src="../../../static/images/card/birthday/video1happybg.png" alt="">
+          <img class="card-video-happy" src="../../../static/images/card/birthday/video1happy.png" alt="">
         </div>
       </transition>
       <transition name="fade-in">
         <div class="card-main-content" v-show="show">
-          <img class="card-video-blue-ng" src="/static/images/card/birthday/video1bluebg.png" alt="">
+          <img class="card-video-blue-ng" src="../../../static/images/card/birthday/video1bluebg.png" alt="">
           <div class="head-from-box">
             <div class="head-from-center">
               <div class="head-image-box">
@@ -28,9 +28,9 @@
             </div>
           </div>
           <div class="card-tv-image">
-            <img class="full-content" src="/static/images/card/birthday/tv.png" alt="">
+            <img class="full-content" src="../../../static/images/card/birthday/tv.png" alt="">
             <div class="video-content">
-              <img class="full-content" src="/static/images/card/birthday/videodefault.png" alt="">
+              <img class="full-content" src="../../../static/images/card/birthday/videodefault.png" alt="">
               <div v-show="showMask" class="video-mask" :class="{'video-mask-light': videoSrc}"></div>
               <video id="videoPlayer1" v-if="videoSrc" class="video-area video-js vjs-big-play-centered" webkit-playsinline playsinline controlslist="nodownload" :poster="videoPosterUrl" @loadstart="setPoster()">
                 <source :src="videoSrc" type='video/mp4'>

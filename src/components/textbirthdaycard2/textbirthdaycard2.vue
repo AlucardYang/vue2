@@ -4,8 +4,8 @@
     <div class="card-template">
       <transition name="fade-in">
         <div v-show="showHappy">
-          <img class="card-text-happy" src="/static/images/card/birthday/text2happy.png" alt="">
-          <img class="card-text-cake" src="/static/images/card/birthday/text2cake.png" alt="">
+          <img class="card-text-happy" src="../../../static/images/card/birthday/text2happy.png" alt="">
+          <img class="card-text-cake" src="../../../static/images/card/birthday/text2cake.png" alt="">
         </div>
       </transition>
       <transition name="fade-in">

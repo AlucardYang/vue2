@@ -20,8 +20,8 @@ export default {
         return {
             inApp: options['in_app'] === 1,
             inIphoneX: false,
-            finalBannerSrc: '/static/images/calculator/finalbanner.png',
-            capitalBannerSrc: '/static/images/calculator/capitalbanner.png',
+            finalBannerSrc: '../../../static/images/calculator/finalbanner.png',
+            capitalBannerSrc: '../../../static/images/calculator/capitalbanner.png',
             name: options['name'] ? options['name'] : '',
             avatar: options['avatar'] ? options['avatar'] : '',
             mobile_pre: options['mobile_pre'] ? options['mobile_pre'] : '',

@@ -12,7 +12,7 @@ import AppCompoundInterestCalc from '@/components/appcompoundinterestcalc/appcom
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',

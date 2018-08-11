@@ -4,7 +4,7 @@ options['share'] = options['share'] ? options['share'] : {
     title: 1
 };
 options['type'] = 'text';
-options['bgImageUrl'] = options['in_app'] === 1 ? '/static/images/card/birthday/textbirthdaybg1.png' : '/static/images/card/birthday/whitetextbirthdaybg1.png';
+options['bgImageUrl'] = options['in_app'] === 1 ? '../../../static/images/card/birthday/textbirthdaybg1.png' : '../../../static/images/card/birthday/whitetextbirthdaybg1.png';
 options['text'] = '親愛的安妮兒，今天是你的生日，在此給你我特別的祝福，願它每分每秒都帶給你健康、好運和幸福。希望這是你度過的最美好的生日！祝福你永遠健康快樂！親愛的安妮兒，今天是你的生日，在此給你我特別的祝福，願它每分每秒都帶給你健康、好運和幸福。希望這是你度過的最美好的生日！祝福你永遠健康快樂！';
 
 export default {

@@ -151,9 +151,9 @@ export default {
              // 兼容iphoneX布局
              if (window.screen.height >= 812) {
                 calculator.inIphoneX = true;
-                calculator.bannerSrc = '/static/images/calculator/futurebannerbig.png';
+                calculator.bannerSrc = '../../../static/images/calculator/futurebannerbig.png';
             } else {
-                calculator.bannerSrc = '/static/images/calculator/futurebanner.png';
+                calculator.bannerSrc = '../../../static/images/calculator/futurebanner.png';
             }
         },
         isBackspace(keyValue) {

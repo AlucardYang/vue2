@@ -22,7 +22,7 @@
     height: .4rem;
     top: -.2rem;
     left: -.19rem;
-    background-image: url("/static/images/calculator/sliderbutton.png");
+    background-image: url("../images/calculator/sliderbutton.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;

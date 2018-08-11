@@ -4,9 +4,9 @@
     <div class="card-template">
       <transition name="fade-in">
         <div v-show="showHappy">
-          <img class="card-left-flower" src="/static/images/card/birthday/video2leftflower.png" alt="">
-          <img class="card-right-flower" src="/static/images/card/birthday/video2rightflower.png" alt="">
-          <img class="card-leaf" src="/static/images/card/birthday/video2leaf.png" alt="">
+          <img class="card-left-flower" src="../../../static/images/card/birthday/video2leftflower.png" alt="">
+          <img class="card-right-flower" src="../../../static/images/card/birthday/video2rightflower.png" alt="">
+          <img class="card-leaf" src="../../../static/images/card/birthday/video2leaf.png" alt="">
         </div>
       </transition>
       <transition name="fade-in">
@@ -24,12 +24,12 @@
             <span>的生日祝福</span>
           </div>
           <div class="video2-happy-box">
-            <img class="video2-happy" src="/static/images/card/birthday/video2happy.png" alt="">
+            <img class="video2-happy" src="../../../static/images/card/birthday/video2happy.png" alt="">
           </div>
           <div class="video-image">
-            <img class="full-content" src="/static/images/card/birthday/video2film.png" alt="">
+            <img class="full-content" src="../../../static/images/card/birthday/video2film.png" alt="">
             <div class="video-content">
-              <img class="full-content" :class="{'opacity-0': videoSrc}" src="/static/images/card/birthday/videodefault.png" alt="">
+              <img class="full-content" :class="{'opacity-0': videoSrc}" src="../../../static/images/card/birthday/videodefault.png" alt="">
               <div v-show="!videoSrc && showMask" class="video-mask" :class="{'video-mask-light': videoSrc}"></div>
               <video id="videoPlayer2" v-if="videoSrc" class="video-area video-js vjs-big-play-centered" webkit-playsinline playsinline controlslist="nodownload" :poster="videoPosterUrl" @loadstart="setPoster()">
                 <source :src="videoSrc" type='video/mp4'>
