@@ -1,3 +1,5 @@
+import List from '@/components/list/list.vue'
+
 const options = {};
 
 export default {
@@ -32,7 +34,7 @@ export default {
     },
     mounted: function () {
         document.title = '生日賀卡列表';
-        this.getList();
+        // this.getList();
     },
     methods: {
         getList: function () {

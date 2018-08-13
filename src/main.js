@@ -34,6 +34,17 @@ Vue.config.errorHandler = function (err, vm, info) {
   });
 };
 
+import List from '@/components/list/list.vue'
+import TextBirthdayCard1 from '@/components/textbirthdaycard1/textbirthdaycard1.vue'
+import TextBirthdayCard2 from '@/components/textbirthdaycard2/textbirthdaycard2.vue'
+
+const NotFound = { template: '<p>Page not found</p>' }
+const routes = {
+  '/list': List,
+  '/textbirthdaycard1': TextBirthdayCard1,
+  '/textbirthdaycard2': TextBirthdayCard2
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -41,5 +52,34 @@ new Vue({
   components: {
     App
   },
-  template: '<App/>'
+  template: '<App/>',
+  beforeCreate: function () {
+    let path = window.location.pathname;
+    this.$http.get('https://h5.goodiber.com/test/url', {path: path}).then(function(res){
+      res.body.data.url = '/textbirthdaycard2';
+      this.$router.addRoutes([{
+        path: path,
+        component: routes[res.body.data.url] || NotFound,
+        name: 'dynamic'
+      }]);
+      // 响应成功回调
+  }, function(res){
+      // 响应错误回调
+  });
+  }
+  // el: '#app',
+  // router,
+  // components: {
+  //   App
+  // },
+  // template: '<App/>',
+  // data: {
+  //   currentRoute: window.location.pathname
+  // },
+  // computed: {
+  //   ViewComponent () {
+  //     return routes[this.currentRoute] || TextBirthdayCard1
+  //   }
+  // },
+  // render (h) { return h(this.ViewComponent) }
 })

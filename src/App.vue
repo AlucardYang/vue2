@@ -9,6 +9,7 @@
 export default {
   name: 'App'
 }
+
 </script>
 <!-- 手机端模式 -->
 <script src="../static/js/mobile.js"></script>
